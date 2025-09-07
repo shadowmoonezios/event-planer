@@ -9,7 +9,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect('mongodb://localhost/event-planer', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost/event-planner', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB verbunden...'))
   .catch(err => console.log(err));
 
