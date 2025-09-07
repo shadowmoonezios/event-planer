@@ -1,7 +1,7 @@
 {
   "name": "event-planer",
   "version": "1.0.0",
-  "description": "Eine Anwendung zur Planung und Verwaltung von Veranstaltungen.",
+  "description": "An application for planning and managing events.",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
