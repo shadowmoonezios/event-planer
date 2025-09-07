@@ -8,8 +8,9 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const PORT = process.env.PORT || 5000;
+const DB_URI = process.env.MONGODB_URI || 'mongodb://localhost/event-planner?retryWrites=true';
 
-mongoose.connect('mongodb://localhost/event-planner?retryWrites=true', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
   .then(() => console.log('MongoDB verbunden...'))
   .catch(err => console.log(err));
 
