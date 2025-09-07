@@ -1,5 +1,5 @@
 {
-  "name": "event-planer",
+  "name": "event-planner",
   "version": "1.0.0",
   "description": "An application for planning and managing events.",
   "main": "index.js",
